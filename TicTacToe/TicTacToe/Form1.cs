@@ -30,9 +30,21 @@ namespace TicTacToe
             Application.Exit();
         }
 
-        private void Buttton_Clicked(object sender, EventArgs e)
+        private void Button_Clicked(object sender, EventArgs e)
         {
+            Button button = (Button)sender;
 
+            if (Turn)
+            {
+                button.Text = "X";
+            }
+            else
+            {
+                button.Text = "O";
+            }
+
+            Turn = !Turn;
+            button.Enabled = false;
         }
     }
 }
