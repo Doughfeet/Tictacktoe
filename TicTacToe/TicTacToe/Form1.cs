@@ -42,7 +42,7 @@ namespace TicTacToe
             {
                 button.Text = "O";
             }
-
+            Count++;
             Turn = !Turn;
             button.Enabled = false;
 
@@ -52,6 +52,7 @@ namespace TicTacToe
         private void CheckForWinner()
         {
             bool thereIsaWinner = false;
+            //Horizontal Checks
             if (A1Btn.Text == A2Btn.Text && A2Btn.Text == A3Btn.Text && !A1Btn.Enabled)
             {
                 thereIsaWinner = true;
@@ -64,6 +65,31 @@ namespace TicTacToe
             {
                 thereIsaWinner = true;
             }
+
+            //Vertical Checks
+            if (A1Btn.Text == B1Btn.Text && B1Btn.Text == C1Btn.Text && !A1Btn.Enabled)
+            {
+                thereIsaWinner = true;
+            }
+            if (A2Btn.Text == B2Btn.Text && B2Btn.Text == C2Btn.Text && !A2Btn.Enabled)
+            {
+                thereIsaWinner = true;
+            }
+            if (A3Btn.Text == B3Btn.Text && B3Btn.Text == C3Btn.Text && !A3Btn.Enabled)
+            {
+                thereIsaWinner = true;
+            }
+
+            //Diagonal Checks
+            if (A1Btn.Text == B2Btn.Text && B2Btn.Text == C3Btn.Text && !A1Btn.Enabled)
+            {
+                thereIsaWinner = true;
+            }
+            if (A3Btn.Text == B2Btn.Text && B2Btn.Text == C1Btn.Text && !A3Btn.Enabled)
+            {
+                thereIsaWinner = true;
+            }
+
 
 
             if (thereIsaWinner)
@@ -78,8 +104,15 @@ namespace TicTacToe
                 {
                     winner = "X";
                 }
-
+                Count = 0;
                 MessageBox.Show(winner + "Wins!");
+            }
+            else
+            {
+                if (Count == 9)
+                {
+                    MessageBox.Show("Draw, Bummer!");
+                }
             }
         }
         private void DisableButtons()
