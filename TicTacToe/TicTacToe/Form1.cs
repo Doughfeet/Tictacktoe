@@ -104,7 +104,6 @@ namespace TicTacToe
                 {
                     winner = "X";
                 }
-                Count = 0;
                 MessageBox.Show(winner + "Wins!");
             }
             else
@@ -127,5 +126,19 @@ namespace TicTacToe
             }
         }
 
+        private void newGameToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Turn = true;
+            Count = 0;
+            foreach (Control c in Controls)
+            {
+                if (c.GetType() == typeof(Button))
+                {
+                    Button b = (Button)c;
+                    b.Enabled = true;
+                    b.Text = "";
+                }
+            }
+        }
     }
 }
