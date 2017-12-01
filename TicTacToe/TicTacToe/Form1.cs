@@ -68,6 +68,7 @@ namespace TicTacToe
 
             if (thereIsaWinner)
             {
+                DisableButtons();
                 string winner = "";
                 if (Turn)
                 {
@@ -79,6 +80,17 @@ namespace TicTacToe
                 }
 
                 MessageBox.Show(winner + "Wins!");
+            }
+        }
+        private void DisableButtons()
+        {
+            foreach (Control c in Controls)
+            {
+                if (c.GetType() == typeof(Button))
+                {
+                    Button b = (Button)c;
+                    b.Enabled = false;
+                }
             }
         }
 
