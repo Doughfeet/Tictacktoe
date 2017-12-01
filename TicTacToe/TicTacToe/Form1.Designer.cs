@@ -41,8 +41,8 @@
             this.B2Btn = new System.Windows.Forms.Button();
             this.B3Btn = new System.Windows.Forms.Button();
             this.C1Btn = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
+            this.C2Btn = new System.Windows.Forms.Button();
+            this.C3Btn = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -165,37 +165,37 @@
             this.C1Btn.UseVisualStyleBackColor = true;
             this.C1Btn.Click += new System.EventHandler(this.Button_Clicked);
             // 
-            // button8
+            // C2Btn
             // 
-            this.button8.AccessibleDescription = "C2Btn";
-            this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.Location = new System.Drawing.Point(298, 581);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(200, 200);
-            this.button8.TabIndex = 1;
-            this.button8.UseVisualStyleBackColor = true;
-            this.button8.Click += new System.EventHandler(this.Button_Clicked);
+            this.C2Btn.AccessibleDescription = "";
+            this.C2Btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.C2Btn.Location = new System.Drawing.Point(298, 581);
+            this.C2Btn.Name = "C2Btn";
+            this.C2Btn.Size = new System.Drawing.Size(200, 200);
+            this.C2Btn.TabIndex = 1;
+            this.C2Btn.UseVisualStyleBackColor = true;
+            this.C2Btn.Click += new System.EventHandler(this.Button_Clicked);
             // 
-            // button9
+            // C3Btn
             // 
-            this.button9.AccessibleDescription = "C3Btn";
-            this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button9.Location = new System.Drawing.Point(521, 581);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(200, 200);
-            this.button9.TabIndex = 1;
-            this.button9.UseVisualStyleBackColor = true;
-            this.button9.Click += new System.EventHandler(this.Button_Clicked);
+            this.C3Btn.AccessibleDescription = "";
+            this.C3Btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.C3Btn.Location = new System.Drawing.Point(521, 581);
+            this.C3Btn.Name = "C3Btn";
+            this.C3Btn.Size = new System.Drawing.Size(200, 200);
+            this.C3Btn.TabIndex = 1;
+            this.C3Btn.UseVisualStyleBackColor = true;
+            this.C3Btn.Click += new System.EventHandler(this.Button_Clicked);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(788, 856);
-            this.Controls.Add(this.button9);
+            this.Controls.Add(this.C3Btn);
             this.Controls.Add(this.B3Btn);
             this.Controls.Add(this.A3Btn);
-            this.Controls.Add(this.button8);
+            this.Controls.Add(this.C2Btn);
             this.Controls.Add(this.B2Btn);
             this.Controls.Add(this.A2Btn);
             this.Controls.Add(this.C1Btn);
@@ -229,8 +229,8 @@
         private System.Windows.Forms.Button B2Btn;
         private System.Windows.Forms.Button B3Btn;
         private System.Windows.Forms.Button C1Btn;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button C2Btn;
+        private System.Windows.Forms.Button C3Btn;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
     }
 }
