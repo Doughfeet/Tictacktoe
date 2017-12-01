@@ -30,6 +30,9 @@ namespace TicTacToe
             Application.Exit();
         }
 
+        private void Buttton_Clicked(object sender, EventArgs e)
+        {
 
+        }
     }
 }
